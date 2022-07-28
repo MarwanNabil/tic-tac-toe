@@ -1,0 +1,151 @@
+:root{
+    --background_color: #1A2A33;
+    
+    --layout_color: #1F3641;
+    --yellow: #ffc860;
+    --cyan: #65e9e4;
+    --text_white: #a8bfc9;
+
+    --border_radius: 15px;
+
+    --btn_width_big: 450px;
+    --btn_height_big: 67px;
+
+    --btn_width_small: 198px;
+    --btn_height_small: 54px;
+}
+
+body{
+    background-color: #1A2A33;
+    font-family: Outfit,sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.window{
+    padding: 1%;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    border-radius: var(--border_radius);
+    background-color: var(--background_color);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    border-radius: var(--border_radius);
+    background-color: var(--layout_color);
+
+    box-shadow: inset 0 -5px #15252d;
+}
+
+h1{
+    color: var(--text_white);
+    width: 90%;
+    text-align: center;
+}
+
+.btn{
+    width: 20rem;
+    height: 5rem;
+    text-align: center;
+    background-color: #121f25;
+    
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+
+    border-width: 0;
+    border-color: transparent;
+    border-radius: var(--border_radius);
+}
+
+.clicked{
+    background-color: #a8bfc9;
+}
+
+.yellow{
+    background-color: #ffc860;
+}
+
+.cyan{
+    background-color: #65e9e4;
+}
+
+.yellow-shadow{
+    box-shadow: inset 0 -5px #675127;
+}
+
+.cyan-shadow{
+    box-shadow: inset 0 -5px #3f918e;
+}
+
+.yellow-shadow:hover{
+    margin-top: 5px;
+    box-shadow: inset 0 0 transparent;
+}
+ .cyan-shadow:hover{
+    margin-top: 5px;
+    box-shadow: inset 0 0 transparent;
+}
+
+
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    border-radius: var(--border_radius);
+    background-color: var(--layout_color);
+
+    box-shadow: inset 0 -5px #15252d;
+
+}
+
+.tile{
+    box-sizing: border-box;
+    width: 33%;
+    height: 33%;
+    background-color:  var(--background_color);
+    border-radius: var(--border_radius);
+    box-shadow: inset 0 -5px #15252d;
+
+}
+
+.tile .taken{
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+}
+
+
+.blur{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1000;
+    overflow: hidden;
+}
+

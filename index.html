@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+     <div id="starter">
+        <div class="container" style="width: 20%;">
+            <div class="window">
+                <img src="images/xologo.svg" style=" width:100%" />
+            </div>
+        </div>
+        <div class="container">
+            
+            <h1>Pick 1st Player Mark</h1>
+            <div class="window" style="width: auto;">
+                <button id="xpicked" class="btn clicked">
+                    <img src="images/x-hole.svg" />
+                </button>
+                <button id="opicked" class="btn">
+                    <img src="images/o-hole.svg" />
+                </button>
+            </div>
+
+            <h1>Choose your opponent</h1>
+            <div class="window">
+                <button id="vspc" class="btn yellow yellow-shadow" onclick="gameOn()">
+                    New Game (Computer)
+                </button>
+                <button id="vsh" class="btn cyan cyan-shadow" onclick="gameOn()">
+                    New Game (Player)
+                </button>
+            </div>
+        </div>
+    </div> 
+    <div id="game" style="display: none; flex-direction: row;">
+        <div class="container" style="width: 20%;">
+            <div class="window" style="width: auto;">
+                <h1>Player Turn</h1>
+                <div id="player-turn">
+                    <img src="images/x-hole.svg" >
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div id="1" class="tile" onclick="doButton(1)" ></div>
+            <div id="2" class="tile" onclick="doButton(2)"></div>
+            <div id="3" class="tile" onclick="doButton(3)"></div>
+            <div id="4" class="tile" onclick="doButton(4)"></div>
+            <div id="5" class="tile" onclick="doButton(5)"></div>
+            <div id="6" class="tile" onclick="doButton(6)"></div>
+            <div id="7" class="tile" onclick="doButton(7)"></div>
+            <div id="8" class="tile" onclick="doButton(8)"></div>
+            <div id="9" class="tile" onclick="doButton(9)"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
